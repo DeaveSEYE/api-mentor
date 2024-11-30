@@ -104,6 +104,7 @@ export class Task extends Model {
   @Column({
     type: DataType.DATE,
     allowNull: true,
+    defaultValue: DataType.NOW,
   })
   dueDate: Date;
 }
